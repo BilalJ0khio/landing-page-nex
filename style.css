@@ -29,14 +29,14 @@ body {
 
 .nav {
   background-color: hsl(0, 0%, 10%);
-
-  position: fixed;
   max-width: 1200px;
 
+  /* position: fixed;
   margin: 0% auto;
   left: 0;
   right: 0;
-  top: 0;
+  top: 0; */
+
   z-index: 2;
   padding: 0em 1em;
   text-transform: capitalize;
@@ -603,6 +603,15 @@ div.sms-image::before {
 /* ----------media-queries-------- */
 
 @media only screen and (min-width: 500px) {
+  .nav {
+    position: fixed;
+    /* max-width: 1200px; */
+    margin: 0% auto;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
   .sec5-heading {
     font-size: 4.2rem;
   }
@@ -968,7 +977,42 @@ div.sms-image::before {
     line-height: 1.5;
   }
   .main {
-    margin-top: 16em;
+    margin-top: 1em;
+    padding: 0em;
+  }
+
+  .section {
+    border-radius: 0px;
+  }
+
+  .section4 > .grid-child {
+    border-radius: 0px;
+  }
+  .section6.section {
+    border-radius: 0px;
+  }
+  .flexx {
+    padding: 0px;
+  }
+
+  .nav-element.child-three {
+    justify-content: center;
+  }
+  .child-three > :nth-child(1) {
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    background-color: #00a773;
+    border: 1px solid hsl(161, 100%, 23%);
+    color: black;
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .freshman-comments {
+    font-size: 2rem;
   }
 }
 
