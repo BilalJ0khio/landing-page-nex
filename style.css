@@ -13,7 +13,7 @@
 
 body {
   font-size: 1.6rem;
-  /* background-color: hsl(0, 0%, 20%); */
+
   background-color: hsl(0, 0%, 10%);
   font-family: "Arimo", sans-serif;
 
@@ -30,13 +30,6 @@ body {
 .nav {
   background-color: hsl(0, 0%, 10%);
   max-width: 1200px;
-
-  /* position: fixed;
-  margin: 0% auto;
-  left: 0;
-  right: 0;
-  top: 0; */
-
   z-index: 2;
   padding: 0em 1em;
   text-transform: capitalize;
@@ -87,7 +80,7 @@ ul {
 
 .nav > :nth-child(2) {
   display: flex;
-  /* border: 1px solid white; */
+
   flex-basis: 500px;
   justify-content: space-between;
 }
@@ -97,7 +90,7 @@ ul {
 }
 .child-three {
   padding: 1em;
-  /* border: 1px solid white; */
+
   display: flex;
   align-items: center;
   /* flex-wrap: wrap; */
@@ -963,6 +956,34 @@ div.sms-image::before {
 }
 
 @media only screen and (max-width: 500px) {
+  .nav-element {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about {
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sec7-grid {
+    padding: 0rem 1rem;
+  }
+
+  .grid-children > :nth-child(1) {
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  .section3 {
+    padding: 0em 0.5rem;
+  }
+
+  .section3 > :first-child {
+    font-size: 1.6rem;
+  }
+
   .sec5-heading {
     font-size: 2.9rem;
   }
@@ -973,8 +994,8 @@ div.sms-image::before {
     font-weight: 100;
   }
   .sec8-heading {
-    font-size: 3rem;
-    line-height: 1.5;
+    font-size: 2.5rem;
+    line-height: 1.2;
   }
   .main {
     margin-top: 1em;
